@@ -50,7 +50,7 @@ public class LoginController {
 
 	@RequestMapping("validate")
 	public ModelAndView validate(String username, String password, HttpServletRequest request) {
-		System.out.println("client from browser " + username);
+		System.out.println("username from browser " + username);
 		System.out.println("password from browser " + password);
 
 		ModelAndView modelAndView = new ModelAndView();
