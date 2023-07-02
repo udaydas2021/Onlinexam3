@@ -91,6 +91,9 @@ public class QuestionManagementController {
 
 	@RequestMapping("deleteQuestion")
 	public ModelAndView deleteQuestion(Questions questions) {
+
+		System.out.println("This is our delete method");
+
 		Session session = factory.openSession();
 
 		Transaction tx = session.beginTransaction();
